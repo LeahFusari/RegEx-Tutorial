@@ -26,8 +26,8 @@ Briefly summarize the regex you will be describing and what you will explain. In
     Anchors are tokens that don't match any specific characters, but that declare something about the string or the matching process.
 
 #### Examples:
-* Caret ^: Matches at the start of the string 
-* Dollar $: Matches at the end of the string 
+* Caret `^`: Matches at the start of the string 
+* Dollar `$`: Matches at the end of the string 
 
 ### Quantifiers
 
@@ -105,9 +105,28 @@ The above expression has four groups associated with it.
 
 ### Bracket Expressions
 
+Brakets indicate a set of characters to match.  Any individual character between the brackets will match.  You can use a hyphen to define a set.
+
+`(/[a-d]/)`
+
+In the example above, any lower-case character from a through d will be a match.
+
 ### Greedy and Lazy Match
 
+'Greedy' means match longest possible string. 'Lazy' means match shortest possible string.  (See also [Quantifiers](#quantifiers).)
+
 ### Boundaries
+
+Boundary matches can help find where in the string a match is taking place. Thus makeing your pattern matches more precise. Example: Searching for a particular word, but only if it appears at the beginning or end of a line.  (See also [Anchors](#anchors))
+
+* `^` – Placed before the word to match
+* `$` – Placed at the end of a word to match
+* `\b` – Checks whether a pattern begin or end on a word boundary
+* `\B` – Matches the expression on a non-word boundary
+* `\A` – The beginning of the input
+* `\G` – Requires to match to occur only at the end of the previous match
+* `\Z` – The end of the input but for the final terminator, if any
+* `\z` —The end of the input
 
 ### Back-references
 
