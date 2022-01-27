@@ -23,8 +23,28 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+    Anchors are tokens that don't match any specific characters, but that declare something about the string or the matching process.
+
+#### Examples:
+* Caret ^: Matches at the start of the string 
+* Dollar $: Matches at the end of the string 
 
 ### Quantifiers
+
+A quantifier is used to determine how many times a specific character or group of characters needs to be present in order to have a match. For instance, if we used the following code in regex, xyz+ then this will match any string xy followed by at least one z.
+
+There are many different types of quantifiers and some hold the attributes of being greedy or lazy as shown in the chart below.
+
+| Greedy        | Lazy          |         Description       |
+|:-------------:|:-------------:|:-------------------------:|
+| *             | *?            | Match zero or more times. |
+| +             | +?            | Match one or more times.  |
+| ?             | ??            | Match zero or one time.   |
+| { n }         | { n }?        | Match exactly n times.    |
+| { n ,}        | { n ,}?       | Match at least n times.   |
+| { n , m }     | { n , m }?    | Match from n to m times.  |
+
+The difference between a greedy and a lazy quantifier is that greedy causes the regular expression engine to match as many occurrences of particular patterns as possible.  Lazy, on the other hand, causes the regular expression engine to match as few occurrences as possible.
 
 ### OR Operator
 
