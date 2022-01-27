@@ -1,4 +1,4 @@
-# Explaining the RegEx basics
+# Explaining the RegEx Basics
 
 The purpose of this gist is to explain the different components of a Regular Expresson (Regex) and their basic uses.  There are, of course, exceptions, special cases and more elaborate uses and syntax but for the porposes of this assignment, a high-level overview is what will be discussed.  
 
