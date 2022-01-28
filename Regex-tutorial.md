@@ -1,10 +1,17 @@
-# Title (replace with your title)
+# Explaining the RegEx Basics
 
-Introductory paragraph (replace this with your text)
+The purpose of this gist is to explain the different components of a Regular Expresson (Regex) and their basic uses.  There are, of course, exceptions, special cases and more elaborate uses and syntax but for the porposes of this assignment, a high-level overview is what will be discussed.  
+
+Regex is typically used for identifying/extracting information, specifically characters or character groups located in specific code.  It is also  used for validation purposes.  For example, ensureing a user supplies an email address and not a random string.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+# Matching an email
+
+The following Regex will be used in (most) examples of this gist along with some additional info about the given Regex components.  It is an example of how we can validate an email format.
+
+`/^([a-z0-9_\.-]+)@([\d0-9\.-]+)\.([a-z\.]{2,6})$/`
+
 
 ## Table of Contents
 
