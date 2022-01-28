@@ -61,6 +61,15 @@ In the email example above, `([a-z0-9_\.-]+)` will match any string that contain
 
 ### OR Operator
 
+Similar to the javascript OR operator `||`, the regex OR operator `|` can be used to match characters or an expression on either the left or right side of the operator.  The email example does not contain an OR operator but please refer to the example below.
+
+#### Example:
+
+ `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
+
+This will match where it starts with the #, followed by either a six character long string that contains a combination of a-f letters and 0-9 numbers **OR** a 3 character long string that contains a combination of a-f letters and 0-9 numbers.
+<br><br>
+
 ### Character Classes
 
 ### Flags
