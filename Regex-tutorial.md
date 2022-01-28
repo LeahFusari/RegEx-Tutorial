@@ -72,6 +72,25 @@ This will match where it starts with the #, followed by either a six character l
 
 ### Character Classes
 
+In the email example at the top of the gist, \d will match a single digit character, 0-9, after the @ sign in the email address. 
+
+Additional character classes are:
+
+>* **Positive character groups:** A character in the input string that must match one of a specified set of characters.
+>* **Negative character groups:** A character in the input string must not match one of a specified set of characters. 
+>* **Any character:** The . (dot or period) character in a regular expression is a wildcard character that matches any character except \n.
+>* **General Unicode category or named block:** A character in the input string must be a member of a particular Unicode category or must fall within a contiguous range of Unicode characters for a match to succeed.
+>* **A negative general Unicode category or named block:** A character in the input string must not be a member of a particular Unicode category or must not fall within a contiguous range of Unicode characters for a match to succeed.
+>* **A word character:** A character in the input string that can belong to any of the Unicode categories that are appropriate for characters in words
+>* **A non-word character:** A character in the input string can belong to any Unicode category that is not a word character.
+>* **A white-space character:** A character in the input string can be any Unicode separator character, as well as any one of a number of control characters
+>* **A non-white-space character:** A character in the input string can be any character that is not a white-space character
+>* **A decimal digit:** A character in the input string can be any of a number of characters classified as Unicode decimal digits.
+>* **A non-decimal digit:** A character in the input string can be anything other than a Unicode decimal digit.
+
+>source: https://docs.microsoft.com/
+<br><br>
+
 ### Flags
 
 ### Grouping and Capturing
