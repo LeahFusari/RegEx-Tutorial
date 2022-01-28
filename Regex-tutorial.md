@@ -37,6 +37,28 @@ The following Regex will be used in (most) examples of this gist along with some
  
 ### Quantifiers
 
+A quantifier is used to determine how many times a specific character or group of characters needs to be present in order to have a match. 
+
+There are many different types of quantifiers and some hold the attributes of being greedy or lazy as shown in the chart below.
+
+<center>
+
+| Greedy        | Lazy          |         Description       |
+|:-------------:|:-------------:|:-------------------------:|
+| *             | *?            | Match zero or more times. |
+| +             | +?            | Match one or more times.  |
+| ?             | ??            | Match zero or one time.   |
+| { n }         | { n }?        | Match exactly n times.    |
+| { n ,}        | { n ,}?       | Match at least n times.   |
+| { n , m }     | { n , m }?    | Match from n to m times.  |
+
+</center>
+
+The difference between a greedy and a lazy quantifier is that greedy causes the regular expression engine to match as many occurrences of particular patterns as possible.  Lazy, on the other hand, causes the regular expression engine to match as few occurrences as possible.
+
+In the email example above, `([a-z0-9_\.-]+)` will match any string that contains a-z, 0-9, _, ., or -. The quantifier + means that it has to contain at least one of these characters in order to have a match.
+<br><br>
+
 ### OR Operator
 
 ### Character Classes
