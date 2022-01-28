@@ -29,9 +29,12 @@ The following Regex will be used in (most) examples of this gist along with some
 
 ## Regex Components
 <br>
+
 ### Anchors
+
  In the email match example above the anchors are the `^` and the `$`.  What this means is that it is looking for something that starts with `^([a-z0-9_\.-]+)` and ends with `.([a-z\.]{2,6})$.`  What the actual parameters we are looking for in these expressions will be explained further in this gist.
  <br><br>
+ 
 ### Quantifiers
 
 ### OR Operator
