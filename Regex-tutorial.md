@@ -93,11 +93,48 @@ Additional character classes are:
 
 ### Flags
 
+There are no flags in the given email example.
+
+Flags are tokens that modify the behavior of searching.
+
+<center>
+
+| Flag          | Name          |         Modification       |
+|:-------------:|:-------------:|:---------------------------------------------------------:|
+| i             | Ignore Casing | Makes the expression search case-insensitively. |
+| g             | Global        | Makes the expression search for all occurences. |
+| s             | Dot All       | Makes the wild character . match newlines as well.  |
+| m             | Multiline     | Makes the boundary characters ^ and $ match the beginning and ending of every single line instead of the beginning and ending of the whole string.    |
+| y             | Sticky        | Makes the expression start its searching from the index indicated in its lastIndex property.   |
+| u             | Unicode       | Makes the expression assume individual characters as code points, not code units, and thus match 32-bit characters as well.  |
+
+</center>
+<br><br>
+
 ### Grouping and Capturing
+
+Captureing groups are a way to treat multiple characters as a single unit.  This is accomplished by using parentheses and are numbered by counting their opening parentheses from left to right.
+
+In the email example, the groups are:
+
+1. `([a-z0-9_\.-]+)`
+2. `([\da-z\.-]+)` 
+3. `([a-z\.]{2,6})` 
+<br><br>
 
 ### Bracket Expressions
 
+Brakets indicate a set of characters to match.  Any individual character between the brackets will match.  You can use a hyphen to define a set.
+
+In this snippit from the email example, `[a-z0-9_\.-]` it can contain letters a-z, numbers 0-9, an underscore, hyphen, or period.
+<br><br>
+
 ### Greedy and Lazy Match
+
+In the given code for matching an email, there isn't a greedy or lazy match included.
+
+'Greedy' means match longest possible string. 'Lazy' means match shortest possible string.  (See also [Quantifiers](#quantifiers).)
+<br><br>
 
 ### Boundaries
 
