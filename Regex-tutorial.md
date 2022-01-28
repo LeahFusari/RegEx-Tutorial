@@ -87,7 +87,7 @@ Additional character classes are:
 >* **A non-white-space character:** A character in the input string can be any character that is not a white-space character
 >* **A decimal digit:** A character in the input string can be any of a number of characters classified as Unicode decimal digits.
 >* **A non-decimal digit:** A character in the input string can be anything other than a Unicode decimal digit.
-
+>
 >source: https://docs.microsoft.com/
 <br><br>
 
@@ -109,6 +109,8 @@ Flags are tokens that modify the behavior of searching.
 | u             | Unicode       | Makes the expression assume individual characters as code points, not code units, and thus match 32-bit characters as well.  |
 
 </center>
+
+source: https://www.codeguage.com/courses/regexp/flags
 <br><br>
 
 ### Grouping and Capturing
@@ -138,11 +140,38 @@ In the given code for matching an email, there isn't a greedy or lazy match incl
 
 ### Boundaries
 
+Boundaries are not used in the given matching an email code.
+
+Boundary matches can help find where in the string a match is taking place.  Example: Searching for a particular word, but only if it appears at the beginning or end of a line.  (See also [Anchors](#anchors))
+
+>* `^` – Placed before the word to match
+>* `\b` – Checks whether a pattern begin or end on a word boundary
+>* `\A` – The beginning of the input
+>* `\G` – Requires to match to occur only at the end of the previous match
+>* `\Z` – The end of the input but for the final terminator, if any
+>* `\z` —The end of the input
+>
+>Source: https://www.geeksforgeeks.org/regex-boundary-matchers-in-java/
+<br><br>
+
 ### Back-references
+
+Back-references are not included in the given code.
+
+Back-references are used to match the same text previously matched by a capturing group.
+<br><br>
 
 ### Look-ahead and Look-behind
 
+Collectively known as Lookarounds, they are an assertion which are non-capturing and must match (or not match) what comes before (or after) the current location in the input string.
+
+Lookarounds are not used in the given example.
+<br><br>
+
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This gist was created by Leah Fusari as part of an assignment for UCONN Coding Bootcamp. 
 
+[GitHub](https://github.com/LeahFusari)
+
+[LinkedIn](https://www.linkedin.com/in/leah-fusari-79b35821b/)
